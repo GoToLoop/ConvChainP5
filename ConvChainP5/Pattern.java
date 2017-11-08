@@ -2,7 +2,7 @@ package ConvChain;
 
 import java.util.function.BiPredicate;
 
-public class Pattern implements Cloneable {
+public class Pattern {
   public final boolean[][] data;
 
   public final BiPredicate<Integer, Integer>
@@ -40,19 +40,11 @@ public class Pattern implements Cloneable {
   }
 
   public Pattern rotated() {
-    return clone().rotates();
+    return new Pattern(data.length, rotate);
   }
 
   public Pattern reflected() {
-    return clone().reflects();
-  }
-
-  public Pattern rotates() {
-    return setBools(rotate);
-  }
-
-  public Pattern reflects() {
-    return setBools(reflect);
+    return new Pattern(data.length, reflect);
   }
 
   public Pattern setBools(final BiPredicate<Integer, Integer> f) {
@@ -74,15 +66,6 @@ public class Pattern implements Cloneable {
     }
 
     return result;
-  }
-
-  @Override public Pattern clone() {
-    try {
-      return (Pattern) super.clone();
-    }
-    catch (final CloneNotSupportedException ex) {
-      throw new RuntimeException(ex);
-    }
   }
 
   @Override public String toString() {
