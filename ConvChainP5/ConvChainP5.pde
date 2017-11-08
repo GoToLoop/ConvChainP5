@@ -1,5 +1,5 @@
 /** 
- * ConvChainP5 (v0.1)
+ * ConvChainP5 (v0.2)
  * GoToLoop (2017/Nov/08)
  *
  * Forum.Processing.org/two/discussion/24889/
