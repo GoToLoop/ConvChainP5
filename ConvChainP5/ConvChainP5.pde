@@ -1,9 +1,9 @@
 /** 
- * ConvChainP5 (v1.0)
+ * ConvChainP5 (v0.1)
  * GoToLoop (2017/Nov/08)
  *
  * Forum.Processing.org/two/discussion/24889/
- * help-running-a-piece-of-code-convchainjava#Item_18
+ * help-running-a-piece-of-code-convchainjava#Item_20
  *
  * https://GitHub.com/buckle2000/ConvChainJava
  * https://GitHub.com/mxgmn/ConvChain
